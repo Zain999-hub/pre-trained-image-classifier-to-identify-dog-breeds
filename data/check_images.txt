@@ -1,0 +1,33 @@
+Questions regarding Uploaded Image Classification:
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+
+Answer: 
+Yes, all three model architectures (ResNet, AlexNet, and VGG) classified the breed of dog in Dog_01.jpg to be the same breed. They all reported a 100% breed classification accuracy.
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
+
+Answer: 
+Yes, each of the three model architectures classified the breed of dog in Dog_01.jpg to be the same breed of dog as Dog_02.jpg. This is indicated by the 100% breed classification accuracy for all three architectures.
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+
+Answer: 
+Yes, all three model architectures correctly classified Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs. They all reported 100% accuracy for "Not-a-Dog" classification.
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
+
+Answer:
+Based on the answers for questions 1 to 3, all three model architectures (ResNet, AlexNet, and VGG) performed equally well in classifying the four uploaded images. 
+They all achieved 100% accuracy in classifying the breed of dogs, identifying dogs vs. non-dogs, and identifying non-dog objects. Therefore, any of the three architectures can be considered the best for this specific task. However, based on previous overall performance and consistency across different datasets, VGG might still be preferred due to its slightly better performance in breed classification in the larger dataset, as seen in the prior tasks.
+
+Results Summary    Table
+# Total Images	    40
+# Dog Images	    30
+# Not-a-Dog Images	10
+
+CNN Model Architecture Performance
+CNN Model Architecture:	% Not-a-Dog Correct	% Dogs Correct	% Breeds Correct	% Match Labels
+ResNet	                          90.0%	        100.0%	          90.0%	             82.5%
+AlexNet	                         100.0%	        100.0%	          80.0%	             75.0%
+VGG	                             100.0%	        100.0%	          93.3%	             87.5%
